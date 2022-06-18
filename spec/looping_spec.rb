@@ -1,9 +1,10 @@
+require 'pry'
 require_relative 'spec_helper'
 require_relative '../looping'
 
 describe '#happy_new_year' do
 
-  it 'puts out a countdown from 10 to 1, followed by "Happy New Year!' do
+  it 'puts out a countdown from 10 to 1, followed by "Happy New Year!"' do
     hny_output = "10\n9\n8\n7\n6\n5\n4\n3\n2\n1\nHappy New Year!\n"
     expect { happy_new_year }.to output(hny_output).to_stdout
   end
